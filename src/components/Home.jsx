@@ -113,7 +113,7 @@ function Home() {
                             <li>
                                 <img src={cocacola} alt="CocaCola" />
                             </li>
-                        
+
                             <li>
                                 <img src={mcdonald} alt="MCDonald" />
                             </li>
@@ -132,7 +132,7 @@ function Home() {
                             <li>
                                 <img src={cocacola} alt="CocaCola" />
                             </li>
-                        
+
                             <li>
                                 <img src={mcdonald} alt="MCDonald" />
                             </li>
@@ -150,6 +150,87 @@ function Home() {
                     </div>
 
                 </section>
+
+                <section className='flex  text-white bg-PrussianBlue overflow-hidden' style={{ borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px" }}>
+                    <div className='w-5/6  flex  justify-center items-center'>
+                        <form class=" w-full max-w-md mx-auto my-10 text-PrussianBlue">
+                            <h1 className='font-bold text-2xl text-white my-10 '>Get in touch</h1>
+
+
+                            <div class="grid md:grid-cols-2 md:gap-6">
+                                <div class="relative z-0 w-full mb-5 group">
+                                    <label for="floating_first_name" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">First name</label>
+                                    <input type="text" name="floating_first_name" id="floating_first_name" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder="First Name" required />
+
+                                </div>
+                                <div class="relative z-0 w-full mb-5 group">
+                                    <label for="last_name" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Last name</label>
+                                    <input type="text" name="last_name" id="last_name" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder=" " required />
+                                </div>
+                            </div>
+                            <div class="relative z-0 w-full mb-5 group">
+                                <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">email</label>
+                                <input type="email" name="email" id="email" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder=" " required />
+                            </div>
+
+                            {/* Radio Button */}
+
+                            <div>
+                                <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Service</label>
+
+                                <fieldset className='grid grid-cols-2'>
+
+                                    <div class="flex items-center mb-4">
+                                        <input id="country-option-1" type="radio" name="countries" value="USA" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue" checked />
+                                        <label for="country-option-1" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                            United States
+                                        </label>
+                                    </div>
+
+                                    <div class="flex items-center mb-4">
+                                        <input id="country-option-2" type="radio" name="countries" value="Germany" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue " />
+                                        <label for="country-option-2" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                            Germany
+                                        </label>
+                                    </div>
+
+                                    <div class="flex items-center mb-4">
+                                        <input id="country-option-3" type="radio" name="countries" value="Spain" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue" />
+                                        <label for="country-option-3" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                            Spain
+                                        </label>
+                                    </div>
+
+                                    <div class="flex items-center mb-4">
+                                        <input id="country-option-4" type="radio" name="countries" value="United Kingdom" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue" />
+                                        <label for="country-option-4" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                            United Kingdom
+                                        </label>
+                                    </div>
+
+                                </fieldset>
+
+                            </div>
+
+
+                            {/* Radio Button */}
+
+                            <div class="relative z-0 w-full mb-5 group">
+                                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                                <textarea id="message" rows="4" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder="Type Message"></textarea>
+
+                            </div>
+
+                            <button type="submit" class="text-white bg-medianpersianblue  font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+                        </form>
+
+                    </div>
+                    <div className='w-2/5 ' style={{backgroundImage:'url(https://res.cloudinary.com/dmtrqlxe4/image/upload/v1703319646/htsbqvqty1dvmbipdv44.jpg)'}}>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto optio ea deleniti praesentium porro, culpa suscipit libero quibusdam nesciunt ratione dolorum quia, nobis atque.</p>
+                    </div>
+                </section>
+
+                
             </div>
         </>
     )

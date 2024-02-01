@@ -1,5 +1,6 @@
 import React from 'react'
 import work from '../assests/work.jpg'
+import OCEAN_STUDIO_LOGO from '../assests/OCEAN_STUDIO_LOGO.png'
 import commercialshoot from '../assests/services/commercial-shoot.jpg'
 import cocacola from '../assests/logos/cocacola.svg'
 import mcdonald from '../assests/logos/mcdonald.svg'
@@ -19,7 +20,7 @@ function Home() {
                     <div className='text-right items-right'>
                         <h1 className='font-bold text-5xl'>TURN YOUR VISION<br /> INTO REALITY</h1>
                         <h3 className='text-3xl'>Your Creative, Media & <br />Technology Transformation Partner</h3>
-                        <button className='p-3 text-white bg-gradient-to-b  from-richelectricblue to-oxfordblue  shadow-inner shadow-white ' style={{ borderRadius: 50 }}>
+                        <button className='p-5 mt-5 text-white bg-gradient-to-b  from-richelectricblue to-oxfordblue  shadow-inner shadow-white ' style={{ borderRadius: 50 }}>
                             Contact Us
                         </button>
                     </div>
@@ -40,9 +41,9 @@ function Home() {
                 </div>
             </section>
 
-            <div className='w-full  bg-white' style={{ marginTop: '-45px', borderTopLeftRadius: "50px", borderTopRightRadius: "50px" }}>
+            <div className='w-full z-10  bg-white' style={{ marginTop: '-45px', borderTopLeftRadius: "50px", borderTopRightRadius: "50px" }}>
 
-                <section className='m-5 w-5/6 mx-auto' id='services'>
+                <section className='m-5 z-10 w-5/6 mx-auto' id='services'>
                     <h1 className='text-center p-12  text-3xl font-bold' >Services</h1>
                     <div className='grid grid-cols-3 gap-5'>
                         <div className='flex justify-center items-center text-center flex-col item'>
@@ -74,7 +75,7 @@ function Home() {
                     </div>
                 </section>
 
-                <section className='m-5 w-3/4 mx-auto' id='gallery'>
+                <section className='m-5 z-10 w-3/4 mx-auto' id='gallery'>
                     <h1 className='text-center p-12  text-3xl font-bold' >Gallery</h1>
                     <div className='grid grid-cols-3 gap-2'>
                         <div className='flex justify-center items-center text-center flex-col item'>
@@ -106,7 +107,7 @@ function Home() {
                     </div>
                 </section>
 
-                <section className='m-12 w-3/4 mx-auto' id='client'>
+                <section className='m-12 z-10 w-3/4 mx-auto' id='client'>
                     <h1 className='text-center p-12  text-3xl font-bold' >Clients</h1>
                     <div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
                         <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
@@ -150,88 +151,96 @@ function Home() {
                     </div>
 
                 </section>
+                <div className='w-full bg-black z-0' style={{ marginTop: "-50px" }}>
+                    <section id='contact' className='flex z-10  text-white bg-PrussianBlue overflow-hidden' style={{ borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px" }}>
+                        <div className='w-5/6 z-10 flex  justify-center items-center'>
+                            <form class="z-10 w-full max-w-md mx-auto my-10 text-PrussianBlue">
+                                <h1 className='font-bold text-2xl text-white my-10 '>Get in touch</h1>
 
-                <section className='flex  text-white bg-PrussianBlue overflow-hidden' style={{ borderBottomLeftRadius: "50px", borderBottomRightRadius: "50px" }}>
-                    <div className='w-5/6  flex  justify-center items-center'>
-                        <form class=" w-full max-w-md mx-auto my-10 text-PrussianBlue">
-                            <h1 className='font-bold text-2xl text-white my-10 '>Get in touch</h1>
 
+                                <div class="grid md:grid-cols-2 md:gap-6">
+                                    <div class="relative z-0 w-full mb-5 group">
+                                        <label for="floating_first_name" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">First name</label>
+                                        <input type="text" name="floating_first_name" id="floating_first_name" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder="First Name" required />
 
-                            <div class="grid md:grid-cols-2 md:gap-6">
-                                <div class="relative z-0 w-full mb-5 group">
-                                    <label for="floating_first_name" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">First name</label>
-                                    <input type="text" name="floating_first_name" id="floating_first_name" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder="First Name" required />
-
+                                    </div>
+                                    <div class="relative z-0 w-full mb-5 group">
+                                        <label for="last_name" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Last name</label>
+                                        <input type="text" name="last_name" id="last_name" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder=" " required />
+                                    </div>
                                 </div>
                                 <div class="relative z-0 w-full mb-5 group">
-                                    <label for="last_name" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Last name</label>
-                                    <input type="text" name="last_name" id="last_name" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder=" " required />
+                                    <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">email</label>
+                                    <input type="email" name="email" id="email" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder=" " required />
                                 </div>
-                            </div>
-                            <div class="relative z-0 w-full mb-5 group">
-                                <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">email</label>
-                                <input type="email" name="email" id="email" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder=" " required />
-                            </div>
 
-                            {/* Radio Button */}
+                                {/* Radio Button */}
 
-                            <div>
-                                <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Service</label>
+                                <div>
+                                    <label for="email" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Service</label>
 
-                                <fieldset className='grid grid-cols-2'>
+                                    <fieldset className='grid grid-cols-2'>
 
-                                    <div class="flex items-center mb-4">
-                                        <input id="country-option-1" type="radio" name="countries" value="USA" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue" checked />
-                                        <label for="country-option-1" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                            United States
-                                        </label>
-                                    </div>
+                                        <div class="flex items-center mb-4">
+                                            <input id="country-option-1" type="radio" name="countries" value="USA" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue" checked />
+                                            <label for="country-option-1" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                                United States
+                                            </label>
+                                        </div>
 
-                                    <div class="flex items-center mb-4">
-                                        <input id="country-option-2" type="radio" name="countries" value="Germany" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue " />
-                                        <label for="country-option-2" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                            Germany
-                                        </label>
-                                    </div>
+                                        <div class="flex items-center mb-4">
+                                            <input id="country-option-2" type="radio" name="countries" value="Germany" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue " />
+                                            <label for="country-option-2" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                                Germany
+                                            </label>
+                                        </div>
 
-                                    <div class="flex items-center mb-4">
-                                        <input id="country-option-3" type="radio" name="countries" value="Spain" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue" />
-                                        <label for="country-option-3" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                            Spain
-                                        </label>
-                                    </div>
+                                        <div class="flex items-center mb-4">
+                                            <input id="country-option-3" type="radio" name="countries" value="Spain" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue" />
+                                            <label for="country-option-3" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                                Spain
+                                            </label>
+                                        </div>
 
-                                    <div class="flex items-center mb-4">
-                                        <input id="country-option-4" type="radio" name="countries" value="United Kingdom" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue" />
-                                        <label for="country-option-4" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                            United Kingdom
-                                        </label>
-                                    </div>
+                                        <div class="flex items-center mb-4">
+                                            <input id="country-option-4" type="radio" name="countries" value="United Kingdom" class="w-3 h-3 border-oxfordblue focus:ring-2 focus:ring-medianpersianblue" />
+                                            <label for="country-option-4" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                                United Kingdom
+                                            </label>
+                                        </div>
 
-                                </fieldset>
+                                    </fieldset>
 
-                            </div>
+                                </div>
 
 
-                            {/* Radio Button */}
+                                {/* Radio Button */}
 
-                            <div class="relative z-0 w-full mb-5 group">
-                                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
-                                <textarea id="message" rows="4" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder="Type Message"></textarea>
+                                <div class="relative z-0 w-full mb-5 group">
+                                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                                    <textarea id="message" rows="4" class="bg-diamondblue border border-oxfordblue  placeholder-oxfordblue  text-sm rounded-lg focus:ring-blue-500 focus:border-PrussianBlue block w-full p-2.5 " placeholder="Type Message"></textarea>
 
-                            </div>
+                                </div>
 
-                            <button type="submit" class="text-white bg-medianpersianblue  font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
-                        </form>
+                                <button type="submit" class="text-white bg-medianpersianblue  font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+                            </form>
 
+                        </div>
+                        <div className='w-2/5 ' style={{ backgroundImage: 'url(https://res.cloudinary.com/dmtrqlxe4/image/upload/v1703319646/htsbqvqty1dvmbipdv44.jpg)' }}>
+                           
+                        </div>
+                    </section>
+
+                    <div className='w-full flex border-b border-white items-center justify-center p-10'>
+                        <div className='w-1/4  p-12'>
+                            <img src={OCEAN_STUDIO_LOGO} alt="" srcset="" />
+
+                        </div>
+                        <h1 className='m-2 footer-brand-heading text-white'>OCEAN STUDIO</h1>
                     </div>
-                    <div className='w-2/5 ' style={{backgroundImage:'url(https://res.cloudinary.com/dmtrqlxe4/image/upload/v1703319646/htsbqvqty1dvmbipdv44.jpg)'}}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto optio ea deleniti praesentium porro, culpa suscipit libero quibusdam nesciunt ratione dolorum quia, nobis atque.</p>
-                    </div>
-                </section>
-
-                
+                </div>
             </div>
+
         </>
     )
 }
